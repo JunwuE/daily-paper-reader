@@ -25,3 +25,30 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: 3D WM
+      description: 3D相关论文及视频世界模型检索
+      enabled: true
+      keywords:
+        - keyword: occupancy
+          keyword_cn: ''
+          query: o
+        - keyword: video world model
+          keyword_cn: ''
+          query: v
+        - keyword: 3d generation
+          keyword_cn: ''
+          query: '3'
+        - keyword: world model
+          keyword_cn: 世界模型
+          query: video generation and world models for physical simulation
+        - keyword: CV
+          keyword_cn: 计算机视觉
+          query: C
+      intent_queries:
+        - query: about 3d
+          query_cn: ''
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-03-20T06:42:24.881Z'
